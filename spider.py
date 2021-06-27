@@ -51,7 +51,7 @@ def getData(baseurl):
                 data.append(otitle)
             else:
                 data.append(titles[0])
-                data.append('无')
+                data.append(' ')
             rating = re.findall(findRating, item)[0]
             data.append(rating)
             judegeNum = re.findall(findJudge, item)[0]
