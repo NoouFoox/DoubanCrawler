@@ -94,14 +94,14 @@ def askUrl(url):
 
 def saveData(datalist, savapath):
     print("save...")
-    print(datalist)
+    # print(datalist)
     book = xlwt.Workbook(encoding="utf-8", style_compression=0)
     sheet = book.add_sheet('豆瓣电影Top5', cell_overwrite_ok=True)
     col = ("电影详情链接", "图片链接", "影片中文名", "影片外文名", "评分", "评价数", "概况", "相关信息")
     for i in range(0, 8):
         sheet.write(0, i, col[i])
     for i in range(0, 250):
-        print(i + 1)
+        # print(i + 1)
         data = datalist[i]
         for j in range(0, 8):
             sheet.write(i + 1, j, data[j])
